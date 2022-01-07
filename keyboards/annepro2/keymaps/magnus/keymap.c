@@ -8,6 +8,11 @@ enum anne_pro_layers {
   _MOV_LAYER,
 };
 
+// build using: make annepro2/c18 ALLOW_WARNING=yes
+// flash using: doas annepro2_tools annepro2_c18_magnus.bin
+// put in IAP (flash) mode by re-inserting USB while holding ESC
+// https://openannepro.github.io/install/
+
 // Key symbols are based on QMK. Use them to remap your keyboard
 /*
  * Layer _BASE_LAYER
