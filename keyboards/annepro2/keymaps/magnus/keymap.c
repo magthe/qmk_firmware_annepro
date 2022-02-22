@@ -8,6 +8,7 @@ enum anne_pro_layers {
   _MOV_LAYER,
 };
 
+// install build tools: paru -S gcc-arm-none-eabi-bin
 // build using: make annepro2/c18 ALLOW_WARNING=yes
 // flash using: doas annepro2_tools annepro2_c18_magnus.bin
 // put in IAP (flash) mode by re-inserting USB while holding ESC
@@ -45,7 +46,7 @@ enum anne_pro_layers {
     KC_CAPS, KC_1,    KC_2,            KC_3,          KC_4,    KC_5,            KC_6,    KC_7,    KC_8,    KC_9,   KC_0,    KC_MINS,       KC_EQL,  KC_BSPC,
     KC_TAB,  KC_Q,    KC_W,            KC_E,          KC_R,    KC_T,            KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,    KC_LBRC,       KC_RBRC, KC_BSLS,
     KC_ESC,  KC_A,    KC_S,            KC_D,          KC_F,    KC_G,            KC_H,    KC_J,    KC_K,    KC_L,   KC_SCLN, KC_QUOT,       KC_ENT,
-    KC_LSFT, KC_Z,    KC_X,            KC_C,          KC_V,    KC_B,            KC_N,    KC_M,    KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,
+    LSFT_T(KC_RALT),  KC_Z,            KC_X,          KC_C,    KC_V,            KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT, KC_SLSH,       RSFT_T(KC_RALT),
     KC_LCTL, KC_LGUI, LALT_T(KC_RALT), LT(_MOV_LAYER, KC_SPC), LALT_T(KC_RALT), KC_LGUI, KC_LCTL, KC_APP
 ),
 /*
